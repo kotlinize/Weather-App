@@ -7,7 +7,7 @@ class WeatherAppApi : BaseApi<WeatherData>() {
 
 	companion object {
 		private const val URL =
-			"https://api.openweathermap.org/data/2.5/forecast/daily?q=Atlanta&mode=json&cnt=7&units=imperial&apikey=3aa158b2f14a9f493a8c725f8133d704"
+			"https://api.openweathermap.org/data/2.5/forecast/daily?q=Atlanta&mode=json&cnt=10&units=imperial&apikey=3aa158b2f14a9f493a8c725f8133d704"
 	}
 
 	override suspend fun fetch(): WeatherData? {

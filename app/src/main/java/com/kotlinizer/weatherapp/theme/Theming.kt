@@ -14,7 +14,7 @@ import androidx.compose.ui.unit.sp
  * Light Color Palette for Day/Light Theme.
  */
 val lightThemeColors = lightColors(
-	primary = ComposeColors.DENIM,
+	primary = Color(0xFF003459),
 	primaryVariant = ComposeColors.FRENCH_GRAY,
 	secondary = ComposeColors.MID_GRAY,
 	secondaryVariant = ComposeColors.MID_GRAY,

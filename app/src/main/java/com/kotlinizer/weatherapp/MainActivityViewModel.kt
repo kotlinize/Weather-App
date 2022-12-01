@@ -36,7 +36,9 @@ class MainActivityViewModel : ViewModel() {
 
 	suspend fun refresh() {
 		withContext(Dispatchers.IO) {
-			fetchSaveWeatherWorker.onFailure { Log.e(this.javaClass.simpleName, "Error On Weather Worker") }.run()
+			fetchSaveWeatherWorker.onFailure {
+				Log.e(this.javaClass.simpleName, "Error On Weather Worker")
+			}.run()
 		}
 	}
 }

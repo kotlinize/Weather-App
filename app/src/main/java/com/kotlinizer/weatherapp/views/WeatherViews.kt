@@ -113,7 +113,7 @@ import com.kotlinizer.weatherapp.util.dayOfWeek
 					style = MaterialTheme.typography.body1,
 					fontWeight = FontWeight.Bold,
 					modifier = Modifier.padding(4.dp),
-					color = Color(0xFF003459)
+					color = MaterialTheme.colors.primary
 				)
 				Text(
 					text = weatherDay.weatherList.first().main,
@@ -162,7 +162,7 @@ import com.kotlinizer.weatherapp.util.dayOfWeek
 						.padding(4.dp)
 						.fillMaxWidth(),
 					textAlign = TextAlign.End,
-					color = Color(0xFF003459)
+					color = MaterialTheme.colors.primary
 				)
 				Text(
 					text = "${weatherDay.temp.min.toInt()}°",
@@ -177,7 +177,7 @@ import com.kotlinizer.weatherapp.util.dayOfWeek
 			}
 		}
 		if (!isLastItem) {
-			Divider()
+			Divider(color = MaterialTheme.colors.secondary)
 		}
 	}
 }
